@@ -1,0 +1,119 @@
+
+
+.main{
+    width: 100%;
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    
+
+  
+    .formulario{
+       
+        padding: 40px;
+        border: 1px solid #CCC;
+        border-radius: 10px;
+        max-width: 600px;
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .mapa{
+        max-width: 600px;
+        padding: 40px;
+        border: 1px solid #CCC;
+        border-radius: 10px;
+    }
+
+
+
+}
+
+
+footer{
+    background-color: #f8f9fa;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        .column1{
+            max-width: 400px;
+            h1{
+                font-size: 22px;
+            }
+            p{
+                font-size: 14px;
+                margin-top: 20px;
+            }
+        }
+        .column2{
+            max-width: 400px;
+            
+            h1{
+                font-size: 22px;
+            }
+            .row{
+                margin-top: 20px;
+                display: flex;
+                img{
+                    width: 56px;
+                    height: 36px;
+                }
+                label{
+                    margin-top:-30px;
+                    margin-left: 40px;
+                }
+            }
+        } 
+        .column3{
+            max-width: 400px;
+            h1{font-size: 22px;
+            }
+            .row2{
+                margin-top: 20px;
+                display: flex;
+                img{
+                    width: 36px;
+                    height: 36px;
+                }
+                label{
+                    margin-top: 5px;
+                    margin-left: 10px;
+                }
+            }
+
+        }   
+      
+    }
+}
+@media screen and (max-width: 793px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .column2,.column3{
+        margin-top: 40px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: auto 0;
+        align-items: center;
+      .formulario,.mapa{  
+        margin-top: 30px;
+        }
+    }
+}
