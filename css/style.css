@@ -2,6 +2,29 @@ html, body{
   margin: 0;
   padding: 0;
 }
+/*fontsTitulos*/
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  padding: 20px;
+  color: rgba(189, 124, 67, 0.959);
+}
+h2 {
+  font-family: 'Balsamiq Sans', cursive;
+  padding: 30px;
+  font-size:40px;
+}
+.titleContacto{
+  font-family: 'Balsamiq Sans', cursive;
+  padding: 5px;
+  font-size:35px;
+}
+h3 {
+  text-align: center;
+  padding: 15px;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 25px;
+}
 body {
   width: 100%;
   height: 100%;
@@ -11,8 +34,8 @@ body {
 /*cardsSeccion2*/
 .title {
   text-align: center;
-  font-size: 30px;
-  margin-top: 50px;  
+  font-size: 30pxpx;
+  padding: 20px;  
 }
 .cardsbody {
   width: 100%;
@@ -51,21 +74,22 @@ h2{
   max-width: 1200px;
   display: flex;
   margin: auto;
+  justify-content: center;
 }
 .nosotrosImg{
-  max-width: 500px;
-  margin: auto;
+  max-width: 600px;
+  margin: 15px;
 
 }
 .nosotrosImg img{
-  width: 400px;
-  height: 300px;
+  max-width: 100%;
+  width: 450px;
   margin: 15px;
   border-radius: 15px;
-}
+  }
 .nosotrosText{
   max-width: 500px;
-  margin: auto;
+  margin: 15px;
 }
 .nosotrosText p{
   margin: 15px;
@@ -73,26 +97,56 @@ h2{
 /*contacto*/
 .main {
   width: 100%;
-  margin: 40px;
-  padding: 40px;
+  max-width: 1200px;
+  margin-top: 50px;
   display: flex;
-  justify-content: space-between;
-  max-width: 1200px; }
-  .main .formulario {
-    padding: 40px;
-    border: 1px solid #CCC;
-    border-radius: 10px;
-    max-width: 600px; }
-    .main .formulario ul {
-      list-style: none;
-      padding: 0;
-      margin: 0; }
+  flex-wrap: wrap;
+  justify-content:center;
+ }
+
   .main .mapa {
-    max-width: 600px;
-    padding: 40px;
-    border: 1px solid #CCC;
-    border-radius: 10px; }
-    .slider {
+    max-width: 450px;
+    margin: 40px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px; 
+    justify-content: center;
+    background: rgba(151, 148, 148, 0.4);
+    box-sizing: border-box;
+  }
+  .main .mapa iframe {
+    max-width: 100%;
+  }
+  form {
+    max-width: 450px;
+    margin: 40px;
+    background: rgba(151, 148, 148, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+  }
+  div form input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+  }
+  textarea {
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+  }
+  #boton {
+    background: #31384A; 
+    color: #fff;  
+    padding: 20px; 
+  }
+  #boton:hover {
+    cursor: pointer;
+  }
+   .slider {
       background: pr;
       box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
       height: 100px;
@@ -161,14 +215,14 @@ footer {
     padding: 40px; }
     footer .container .column1 {
       max-width: 400px; }
-      footer .container .column1 h1 {
+      footer .container .column1 h4 {
         font-size: 22px; }
       footer .container .column1 p {
         font-size: 14px;
         margin-top: 20px; }
     footer .container .column2 {
       max-width: 400px; }
-      footer .container .column2 h1 {
+      footer .container .column2 h4 {
         font-size: 22px; }
       footer .container .column2 .row {
         margin-top: 20px;
@@ -181,7 +235,7 @@ footer {
           margin-left: 40px; }
     footer .container .column3 {
       max-width: 400px; }
-      footer .container .column3 h1 {
+      footer .container .column3 h4 {
         font-size: 22px; }
       footer .container .column3 .row2 {
         margin-top: 20px;
@@ -192,6 +246,7 @@ footer {
         footer .container .column3 .row2 label {
           margin-top: 5px;
           margin-left: 10px; }
+
 
 @media screen and (max-width: 793px) {
   .container {
@@ -208,7 +263,7 @@ footer {
     .main .formulario, .main .mapa {
       margin-top: 30px; } 
     }
-@media screen and (max-width:700px) {
+@media screen and (max-width:930px) {
   .empresa{
     flex-wrap: wrap;
   }
