@@ -2,6 +2,18 @@ html, body{
   margin: 0;
   padding: 0;
 }
+/*navegador*/
+.navbar-brand{
+  font-family: 'Balsamiq Sans', cursive;
+  
+}
+.nav-link{
+  font-family: 'Balsamiq Sans', cursive;
+ 
+}
+nav {
+  font-size: 21px;
+}
 /*fontsTitulos*/
 h1 {
   font-family: 'Pacifico', cursive;
@@ -13,6 +25,7 @@ h2 {
   font-family: 'Balsamiq Sans', cursive;
   padding: 30px;
   font-size:40px;
+  color: rgba(189, 124, 67, 0.959);
 }
 .titleContacto{
   font-family: 'Balsamiq Sans', cursive;
@@ -24,6 +37,7 @@ h3 {
   padding: 15px;
   font-family: 'Balsamiq Sans', cursive;
   font-size: 25px;
+  color: rgb(224, 204, 114);
 }
 body {
   width: 100%;
@@ -31,7 +45,7 @@ body {
   letter-spacing: 0,03em;
   line-height: 1.6;
 }
-/*cardsSeccion2*/
+/*cardsSeccion3*/
 .title {
   text-align: center;
   font-size: 30pxpx;
@@ -61,6 +75,7 @@ body {
 .cardsbody .card h4{
   font-weight: 500;
   margin-top: 15px;
+  color: rgb(110, 156, 199);
 }
 .cardsbody .card p{
   padding: 0 1rem;
@@ -76,6 +91,11 @@ h2{
   margin: auto;
   justify-content: center;
 }
+strong{
+  font-family: 'Pacifico', cursive;
+  color: rgba(189, 124, 67, 0.959);
+  font-size: 20px;
+}
 .nosotrosImg{
   max-width: 600px;
   margin: 15px;
@@ -90,6 +110,7 @@ h2{
 .nosotrosText{
   max-width: 500px;
   margin: 15px;
+  font-family: 'Balsamiq Sans', cursive;
 }
 .nosotrosText p{
   margin: 15px;
@@ -201,7 +222,7 @@ h2{
     
 /*footer*/
 footer {
-  background-color: #f8f9fa;
+  background-color: #f0f3f7;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -227,8 +248,8 @@ footer {
       footer .container .column2 .row {
         margin-top: 20px;
         display: flex; }
-        footer .container .column2 .row img {
-          width: 56px;
+        footer .container .column2 .row a img {
+          width: 36px;
           height: 36px; }
         footer .container .column2 .row label {
           margin-top: -30px;
@@ -263,6 +284,7 @@ footer {
     .main .formulario, .main .mapa {
       margin-top: 30px; } 
     }
+
 @media screen and (max-width:930px) {
   .empresa{
     flex-wrap: wrap;
